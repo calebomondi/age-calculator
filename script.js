@@ -55,7 +55,7 @@ function calcAge(){
         document.getElementById("erM").style.display="none";
         document.getElementById("erY").style.display="none";
 
-        if(BYval > cYear){
+        if(BYval > cYear || BYval < 0){
             document.getElementById("labelY").style.color="hsl(0, 100%, 67%)";
             document.getElementById("erY").innerHTML="Must be in the past";
             document.getElementById("erY").style.fontStyle="italic";
