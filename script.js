@@ -37,7 +37,7 @@ function calcAge(){
         document.getElementById("erY").innerHTML="This field is required";
         document.getElementById("erY").style.fontStyle="italic";
         document.getElementById("labelY").style.color="hsl(0, 100%, 67%)";
-    }else if((BDval<0 || BDval>31) && (BMval<0 || BMval>12) && (BYval<1900 || BYval>cYear)){
+    }else if((BDval<0 || BDval>31) && (BMval<0 || BMval>12) && (BYval<0 || BYval>cYear)){
         document.getElementById("erD").innerHTML="Must be a valid date";
         document.getElementById("erD").style.fontStyle="italic";
         document.getElementById("labelD").style.color="hsl(0, 100%, 67%)";
