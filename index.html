@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  
+</head>
+<body>
+  <div class="container">
+    <div class="inputs">
+      <div>
+          <p id="labelD">DAY</p>
+          <input type="text" name="day" id="bD" min="1" max="31" placeholder="DD">
+          <p id="erD"></p>
+      </div>
+      <div>
+        <p id="labelM">MONTH</p>
+        <input type="text" name="month" id="bM" min="1" max="12" placeholder="MM">
+        <p id="erM"></p>
+      </div>
+      <div>
+        <p id="labelY">YEAR</p>
+        <input type="text" name="year" id="bY" min="1900" max="2023" placeholder="YYYY">
+        <p id="erY"></p>
+    </div>
+    </div>
+    <div class="btn">
+        <hr>
+        <button type="button" id="btnClick">.</button>
+    </div>
+    <div class="display">
+        <div>
+          <p id="dispY">--</p>
+          <p>years</p>
+        </div>
+        <div>
+          <p id="dispM">--</p>
+          <p>months</p>
+        </div>
+        <div>
+          <p id="dispD">--</p>
+          <p>days</p>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
