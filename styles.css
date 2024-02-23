@@ -4,18 +4,14 @@
 body {
 background-color: hsl(0, 0%, 94%);
 }
-.container {
-width: 700px;
-height: auto;
+.containerx {
+width: 70%;
+margin-left: auto;
+margin-right: auto;
 box-sizing: border-box;
-background-color: hsl(0, 0%, 100%);
+background-color: hsl(0, 0%, 94%);
 padding: 20px;
-/*Position at center*/
-position: absolute;
-top: 50%;
-left: 50%;
--ms-transform: translate(-50%,-50%);
-transform: translate(-50%,-50%);
+border: 1px solid hsl(259, 100%, 65%);
 /*border radius*/
 border-top-left-radius: 20px;
 border-top-right-radius: 20px;
@@ -33,6 +29,8 @@ border-bottom-right-radius: 250px;
 #erD, #erM, #erY {
     font-family: normal;
     color: hsl(0, 100%, 67%);
+    text-align: center;
+    visibility: hidden;
     position: absolute;
 }
 .inputs div>input[type="text"] {
@@ -88,4 +86,68 @@ src: url(./assets/fonts/Poppins-Bold.ttf);
 }
 .display div {
     margin-left: 12px;
+}
+@media screen and (max-width:400px) {
+    .btn button {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+@media screen and (max-width:767px) {
+    .display div {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .display div  {
+        display: inline-block;
+        margin-left: 5px;
+    }
+}
+@media screen and (max-width:991px) {
+    .containerx {
+        width: 70%;
+        border-bottom-right-radius: 90px;
+    }
+    .display div>p {
+        font-size: 30px;
+    }
+    .inputs div{
+        text-align: center;
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+    }
+    .inputs div>input[type="text"] {
+        text-align: center;
+        width: 100px;
+        padding: 5px 15px;
+        font-size: 20px;
+        margin-top: -15px;
+    }
+    ::-webkit-input-placeholder {
+        text-align: center;
+    }
+    .btn {
+        width: 99%;
+    }
+    .btn hr {
+        display: none;
+    }
+    .btn button {
+        width: 50px;
+        height: 50px;
+    }
+    #erD, #erM, #erY {
+        font-size: 13px;
+        text-align: center;
+    }
+    #labelM, #labelY {
+        margin-top: -10px;
+    }
 }
