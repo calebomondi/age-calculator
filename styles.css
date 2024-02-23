@@ -84,9 +84,6 @@ src: url(./assets/fonts/Poppins-Bold.ttf);
 #dispD, #dispM, #dispY {
     color: hsl(259, 100%, 65%);
 }
-.display div {
-    margin-left: 12px;
-}
 @media screen and (max-width:400px) {
     .btn button {
         width: 50px;
